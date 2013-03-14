@@ -5,7 +5,7 @@ Dialog IdeaMart SMS Api wrapper purely written in Python ready to deploy at Goog
 
 I guess now you wont take more than 10mins to write a simple SMS app! ;-)
 
-@author : harshadura
+@author : harshadura, dewmal
 
 @lastchanged : 14/03/2013
 
