@@ -1,7 +1,7 @@
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp.util import run_wsgi_app
 import logging
-import simplejson as json
+import json
 from google.appengine.api import urlfetch
 
 class MainPage(webapp.RequestHandler):
