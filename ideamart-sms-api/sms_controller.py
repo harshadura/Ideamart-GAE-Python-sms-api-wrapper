@@ -10,16 +10,36 @@ class MainPage(webapp.RequestHandler):
         logging.info(self.request)
         self.response.headers['Content-Type'] = 'application/json'
         self.response.headers['Accept'] = 'application/json'
-        self.response.out.write('Hello, Telco App Running in this Space')
+        self.response.out.write('Hello, Telco App Runs on this Space')
 
     def post(self):
 
+        logging.info(self.request.body)
+        self.response.headers['Content-Type'] = 'application/json'
+        self.response.headers['Accept'] = 'application/json'
+           
+        received_content = self.request.body
+        decoded_json = json.loads(received_content)
+        requestMessage = decoded_json["message"]
+        
+        logging.info("???????????")
+        logging.info(requestMessage)
+        logging.info("$$$$$$$$$$$")
+        
+#        self.response.headers['Content-Type'] = "text/plain"
+#        self.response.out.write(self.request.body)
+    
         url='http://localhost:7000/sms/send'
-
-        res = { 'message':'Hello',
-                "destinationAddresses":["tel:94771122336"],
-                "password":"password",
-                "applicationId":"APP_000001"
+        
+        replyMessage = "Hello : ", requestMessage;
+        destinationAddrs = ["tel:94771122336"];
+        appPasswordCode = "password";
+        applicationId = "APP_000001";
+        
+        res = { 'message': replyMessage,
+                "destinationAddresses": destinationAddrs,
+                "password": appPasswordCode,
+                "applicationId": applicationId
         }
 
         logging.info(res)
