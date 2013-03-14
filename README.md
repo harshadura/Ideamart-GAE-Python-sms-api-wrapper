@@ -1,11 +1,9 @@
   README : Ideamart-GAE-Python-sms-api-wrapper
 --------------------------------------
 
-Dialog IdeaMart SMS Api wrapper purely written in Python ready to deploy in Google App Engine.
+Dialog IdeaMart SMS Api wrapper purely written in Python ready to deploy at Google App Engine. 
+I guess now you wont take more than 10mins to write a simple SMS app! ;-)
 
 @author : harshadura
-
-@lastchanged : 25/09/2012
-
-
+@lastchanged : 14/03/2013
 
