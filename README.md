@@ -11,5 +11,7 @@ So I prefer this method for simulation purpose only.
 
 @author : harshadura, dewmal
 
-@lastchanged : 14/03/2013
+@lastchanged : 15/03/2013
+
+@license : GNU GPL v2
 
