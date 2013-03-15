@@ -43,7 +43,7 @@ class MainPage(webapp.RequestHandler):
         
         randomPercentage = randrange(30, 99)
 
-        url='http://localhost:7000/sms/send'
+        url='http://localhost:7000/sms/send' # replace: api.dialog.lk:8080
         destinationAddrs = [requestTP];
         appPasswordCode = "password";
         applicationId = "APP_000001";
